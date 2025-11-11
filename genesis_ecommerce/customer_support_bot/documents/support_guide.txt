@@ -1,0 +1,286 @@
+GENESIS E-COMMERCE - CUSTOMER SUPPORT GUIDE
+
+OVERVIEW
+Welcome to Genesis E-commerce Customer Support. This guide provides comprehensive information to help you resolve common issues and answer frequently asked questions.
+
+═══════════════════════════════════════════════════════════════
+
+ORDER MANAGEMENT
+
+How to Track Your Order:
+1. Log into your Genesis E-commerce account
+2. Navigate to "My Orders" section
+3. Click on the specific order number
+4. View real-time tracking information
+5. You can also use our API endpoint: GET /v1/orders/user/{user_id}
+
+Order Status Meanings:
+- PENDING: Order received and awaiting processing
+- PROCESSING: Order is being prepared for shipment
+- SHIPPED: Order has been dispatched and is in transit
+- DELIVERED: Order has been successfully delivered
+- CANCELLED: Order has been cancelled
+- RETURNED: Order has been returned
+
+How to Modify an Order:
+- Orders can only be modified within 2 hours of placement
+- Contact customer support immediately with your order number
+- Provide details of the changes you need
+- Modifications are subject to product availability
+
+═══════════════════════════════════════════════════════════════
+
+RETURNS AND REFUNDS
+
+Return Eligibility:
+- Items must be returned within 30 days of delivery
+- Products must be unused and in original packaging
+- Include all accessories, manuals, and documentation
+- Retain proof of purchase (order number or receipt)
+
+Non-Returnable Items:
+- Digital products and downloadable software
+- Personalized or customized items
+- Perishable goods
+- Intimate or sanitary products
+- Gift cards
+
+Return Process:
+1. Contact customer support to initiate a return
+2. Provide your order number and reason for return
+3. Receive a Return Authorization (RA) number
+4. Pack the item securely with the RA number
+5. Ship to the provided return address
+6. Track your return shipment
+7. Refund processed within 7-10 business days after receipt
+
+Refund Methods:
+- Refunds are issued to the original payment method
+- Processing time: 7-10 business days
+- Bank processing may take additional 3-5 business days
+- You will receive an email confirmation when refund is processed
+
+═══════════════════════════════════════════════════════════════
+
+SHIPPING INFORMATION
+
+Shipping Options:
+1. Standard Shipping (5-7 business days): $5.99
+2. Express Shipping (2-3 business days): $14.99
+3. Overnight Shipping (1 business day): $24.99
+4. Free Standard Shipping on orders over $50
+
+International Shipping:
+- Available to select countries
+- Customs fees and import duties are customer's responsibility
+- Delivery times vary by destination (10-21 business days)
+- International orders cannot be expedited
+
+Shipping Restrictions:
+- We do not ship to PO Boxes for express delivery
+- Some products cannot be shipped internationally
+- Address changes must be made before shipment
+- Incorrect addresses may result in delivery delays
+
+Lost or Damaged Shipments:
+- Report lost packages within 30 days of expected delivery
+- Report damaged items within 48 hours of delivery
+- Provide photos of damaged packaging and products
+- We will investigate and provide replacement or refund
+
+═══════════════════════════════════════════════════════════════
+
+PAYMENT ISSUES
+
+Accepted Payment Methods:
+- Visa, MasterCard, American Express, Discover
+- PayPal
+- Apple Pay and Google Pay
+- Genesis E-commerce Gift Cards
+
+Payment Declined:
+Common reasons and solutions:
+1. Insufficient funds - Check your account balance
+2. Incorrect card details - Verify card number, CVV, and expiration
+3. Billing address mismatch - Ensure address matches card records
+4. Security hold - Contact your bank
+5. Card expired - Use a valid payment method
+
+Billing Questions:
+- Charges appear as "Genesis E-commerce" on statements
+- You will receive a receipt via email after purchase
+- For duplicate charges, contact support immediately
+- Promotional codes must be applied before payment
+
+═══════════════════════════════════════════════════════════════
+
+ACCOUNT MANAGEMENT
+
+Password Reset:
+1. Click "Forgot Password" on login page
+2. Enter your registered email address
+3. Check email for reset link (valid for 24 hours)
+4. Create a new strong password
+5. Passwords must be at least 8 characters with mixed case and numbers
+
+Update Account Information:
+- Log into your account
+- Navigate to "Account Settings"
+- Update email, phone, or shipping address
+- Save changes
+- Verify email if email address is changed
+
+Account Security:
+- Never share your password with anyone
+- Enable two-factor authentication for extra security
+- Review account activity regularly
+- Log out from shared devices
+- Report suspicious activity immediately
+
+═══════════════════════════════════════════════════════════════
+
+TECHNICAL SUPPORT
+
+Website Issues:
+- Clear browser cache and cookies
+- Try a different browser (Chrome, Firefox, Safari, Edge)
+- Disable browser extensions temporarily
+- Check internet connection
+- Try accessing from a different device
+
+Mobile App Issues:
+- Update to the latest app version
+- Restart your device
+- Clear app cache
+- Uninstall and reinstall if problems persist
+- Ensure your OS is up to date
+
+API Access (for developers):
+- API documentation available at /docs endpoint
+- Authentication required for most endpoints
+- Rate limiting: 100 requests per minute
+- Contact api-support@genesis-ecommerce.com for API keys
+
+═══════════════════════════════════════════════════════════════
+
+PROMOTIONS AND DISCOUNTS
+
+Using Promo Codes:
+- Enter code during checkout before payment
+- One promo code per order
+- Cannot be combined with other offers
+- Some exclusions may apply
+- Codes are case-sensitive
+
+Loyalty Program:
+- Earn 1 point for every $1 spent
+- 100 points = $5 reward
+- Points expire after 12 months of inactivity
+- Exclusive member-only sales and early access
+- Birthday bonus: 50 extra points
+
+Sale Items:
+- Sale prices are final and cannot be combined with other discounts
+- Limited quantities available
+- Returns accepted but original sale price refunded
+- Price adjustments not available after purchase
+
+═══════════════════════════════════════════════════════════════
+
+SUPPORT TICKET SYSTEM
+
+Creating a Support Ticket:
+1. Use the API endpoint: POST /v1/support/tickets
+2. Provide your order_id and detailed issue_description
+3. You'll receive a ticket ID for tracking
+4. Our team will respond within 24 hours
+
+Ticket Priority Levels:
+- LOW: General inquiries, non-urgent questions
+- MEDIUM: Order issues, shipping questions
+- HIGH: Payment problems, urgent order changes
+- CRITICAL: Account security, unauthorized transactions
+
+Checking Ticket Status:
+- Use API endpoint: GET /v1/support/tickets/{ticket_id}
+- Status values: OPEN, IN_PROGRESS, RESOLVED, CLOSED
+- You'll receive email updates on ticket progress
+
+Best Practices for Support Tickets:
+- Include your order number
+- Provide detailed description of the issue
+- Attach relevant screenshots or photos
+- Specify your preferred resolution
+- Respond promptly to support team inquiries
+
+═══════════════════════════════════════════════════════════════
+
+FREQUENTLY ASKED QUESTIONS
+
+Q: How long does delivery take?
+A: Standard shipping takes 5-7 business days, express takes 2-3 business days. International orders take 10-21 business days.
+
+Q: Can I change my shipping address after ordering?
+A: Only if the order hasn't shipped yet. Contact support immediately with your order number.
+
+Q: What if I receive the wrong item?
+A: Contact support within 48 hours with photos. We'll arrange for correct item to be sent and provide a prepaid return label.
+
+Q: Are there any hidden fees?
+A: No. The total at checkout is your final price (excluding international customs fees which vary by country).
+
+Q: How do I cancel an order?
+A: Orders can be cancelled within 24 hours if not yet shipped. Contact support with your order number.
+
+Q: Can I track my return?
+A: Yes, keep your return shipping receipt and tracking number. Check with the carrier for updates.
+
+Q: What if my promo code doesn't work?
+A: Check expiration date, minimum purchase requirements, and that eligible items are in your cart. Contact support if issues persist.
+
+Q: How do I contact a live agent?
+A: Create a support ticket via our API or use the chatbot. For urgent matters, mark ticket as HIGH priority.
+
+═══════════════════════════════════════════════════════════════
+
+CONTACT INFORMATION
+
+Customer Support Hours:
+Monday - Friday: 9:00 AM - 6:00 PM EST
+Saturday: 10:00 AM - 4:00 PM EST
+Sunday: Closed
+
+Contact Methods:
+- Email: support@genesis-ecommerce.com
+- Phone: 1-800-GENESIS (1-800-436-3747)
+- Live Chat: Available during business hours
+- Support Ticket: POST /v1/support/tickets
+- Chatbot: Available 24/7 at /v1/support/chat
+
+Response Times:
+- Email: Within 24 hours
+- Phone: Immediate during business hours
+- Support Tickets: Within 24 hours
+- Chatbot: Instant automated responses
+
+═══════════════════════════════════════════════════════════════
+
+ESCALATION PROCESS
+
+If your issue isn't resolved:
+1. First response from standard support (24 hours)
+2. Escalation to senior support (48 hours)
+3. Manager review (72 hours)
+4. Executive customer service team (5 business days)
+
+For Complex Issues:
+- Provide all previous ticket numbers
+- Include timeline of communications
+- Clearly state desired resolution
+- Remain patient and professional
+
+We're committed to resolving all issues to your satisfaction!
+
+═══════════════════════════════════════════════════════════════
+
+Thank you for choosing Genesis E-commerce!
