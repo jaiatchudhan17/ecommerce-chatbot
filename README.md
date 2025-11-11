@@ -360,9 +360,3 @@ ecombot/
 - Ensure virtual environment is activated
 - Run `uv pip install -e .` to install in editable mode
 - Check Python version: `python --version` (should be >= 3.12)
-
-[Add contribution guidelines here]
-
-## 📧 Contact
-
-[Add contact information here]
