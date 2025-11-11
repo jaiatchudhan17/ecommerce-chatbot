@@ -361,12 +361,6 @@ ecombot/
 - Run `uv pip install -e .` to install in editable mode
 - Check Python version: `python --version` (should be >= 3.12)
 
-## 📝 License
-
-[Add your license here]
-
-## 👥 Contributing
-
 [Add contribution guidelines here]
 
 ## 📧 Contact
